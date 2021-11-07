@@ -8,6 +8,7 @@ use latest rocket see cargo toml
 
 [json is no more the way it is defined in here](https://stackoverflow.com/questions/61106971/i-get-a-no-json-in-root-error-when-building-a-rust-rocket-api)
 
+[cargo install diesel_cli --no-default-features --features postgres](https://blog.logrocket.com/create-a-backend-api-with-rust-and-postgres/)
 
 
 
