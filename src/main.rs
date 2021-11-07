@@ -4,6 +4,12 @@
 #[macro_use] extern crate rocket_contrib;
 #[macro_use] extern crate serde_derive;
 
+#[macro_use] extern crate diesel;
+extern crate r2d2;
+extern crate r2d2_diesel;
+mod db;
+mod schema;
+
 use rocket_contrib::json::Json;
 use rocket_contrib::json::JsonValue;
 
@@ -36,6 +42,7 @@ fn delete(id: i32) -> Json<JsonValue> {
 
 fn main() {
     rocket::ignite()
+    .manage(db::connect())
         .mount("/hero", routes![create, update, delete])
         .mount("/heroes", routes![read])
         .launch();
