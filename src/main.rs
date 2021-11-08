@@ -14,7 +14,7 @@ use rocket_contrib::json::Json;
 use rocket_contrib::json::JsonValue;
 
 mod hero;
-use hero::{Hero};
+use hero::Hero;
 
 #[post("/", data = "<hero>")]
 fn create(hero: Json<Hero>, connection: db::Connection) -> Json<Hero> {
