@@ -4,6 +4,7 @@ A simple api server written in rust using rocket, diesel and postgresql.
 
 [main tutorial follow](https://medium.com/sean3z/building-a-restful-crud-api-with-rust-1867308352d8)
 
+## Pains
 [code for main.rs to solve plugin error](https://rocket.rs/v0.4/guide/getting-started/#hello-world)
 
 use latest rocket see cargo toml
