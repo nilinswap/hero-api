@@ -1,4 +1,6 @@
-#README
+# README
+A simple api server written in rust using rocket, diesel and postgresql. 
+
 
 [main tutorial follow](https://medium.com/sean3z/building-a-restful-crud-api-with-rust-1867308352d8)
 
